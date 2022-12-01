@@ -1,0 +1,152 @@
+@font-face{
+	font-family: Rezume;
+	src: url("Rezume.otf");
+}
+
+body{
+	margin: 0;
+}
+
+.parent{
+	width: 100%;
+	height: 100%;
+	padding-top: 100px;
+	font-family: Rezume;
+	background:url("back.gif") 0px -150px no-repeat; 
+	background-size: cover;
+	margin: 0;
+	position: relative;
+
+}
+
+h1{
+	position: absolute;
+	margin-top: 0px;
+	text-align: center;
+	color: white;
+	opacity: 0.4;
+	animation: 5s fontAnimation infinite;
+}
+@keyframes fontAnimation{
+	30%{
+		opacity: 0.4;
+	}
+	60%{
+		opacity: 0.9;
+	}
+	100%{
+		opacity: 0.4;
+	}
+}
+
+
+.click{
+	position: relative;
+	width: 0;
+    height: 0;
+  	border-top: 70px solid transparent;
+    border-left: 150px solid black;
+    border-bottom: 70px solid transparent;
+    border-radius: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	transition-duration: 0.7s;
+}
+.click p {
+	position: absolute;
+	left: -120px;
+	color: white;
+	top: -25px;
+}
+
+.click:hover{
+	opacity: 0.5;
+	transform: scale(1.1);
+	animation: colors 5s infinite;
+
+}
+
+
+.clicker{
+	width: 0;
+    height: 0;
+  	border-top: 30px solid transparent;
+    border-left: 70px solid white;
+    border-bottom: 30px solid transparent;
+    border-radius: 10px;
+	margin-left: 0px;
+	background: transparent;
+	border-right: 0px;
+	
+
+}
+
+
+
+.transition{
+	margin-top: 250px;
+	padding-top: 20px;
+	width: 100%;
+	height:247px;
+	margin-bottom: 0px;
+	text-align: center;
+	background: white;
+}
+
+.transition: hover{
+	opacity: 0.5;
+}
+
+p{
+	opacity: 0.8;
+	margin-left: -20px;
+	color: black;
+	font-size: 17px;
+}
+
+
+@keyframes colors {
+  0% {
+    border-left-color: #006400;
+  }
+
+  10% {
+     border-left-color: #ADFF2F;
+  }
+
+  20% {
+     border-left-color: #FFD700;
+  }
+
+  30% {
+     border-left-color: #FF4500;
+  }
+
+  40% {
+     border-left-color: #4B0082;
+  }
+
+  50% {
+     border-left-color: #191970;
+ }
+
+  60% {
+     border-left-color: #1E90FF;
+  }
+
+  70% {
+     border-left-color: #DA70D6;
+  }
+
+  80% {
+     border-left-color: #FFC0CB;
+  }
+
+  90% {
+     border-left-color: #7CFC00;
+  }
+
+  100% {
+     border-left-color: black;
+  }
+}
