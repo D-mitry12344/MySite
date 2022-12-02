@@ -22,7 +22,7 @@ button.onclick = () => {
 	clicker.style.borderLeftColor  = (clicker.disabled == true) ? "red" : "white"
 };
 function toSite(){
-	window.location.href = 'index.html';
+	window.location.href = '#';
 }
 clicker.onclick = () => {
 	headerDown.textContent="ОЙ, ЗРЯ";
