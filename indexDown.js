@@ -21,9 +21,9 @@ button.onclick = () => {
 	clicker.disabled = (clicker.disabled == true) ? false : true;
 	clicker.style.borderLeftColor  = (clicker.disabled == true) ? "red" : "white"
 };
-function toSite(){
-	window.location.href = '#';
-}
+/*function toSite(){
+	window.location.href = '';
+}*/
 clicker.onclick = () => {
 	headerDown.textContent="ОЙ, ЗРЯ";
 	clicker.textContent=" ";
